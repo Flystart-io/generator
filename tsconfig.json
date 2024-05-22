@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noEmit": false,
+    "declaration": true,
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "lib": [
+      "ESNext"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "dist/**"
+  ]
+}

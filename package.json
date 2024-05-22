@@ -1,0 +1,58 @@
+{
+  "name": "@flystart/generator",
+  "version": "0.1.2",
+  "author": "Duodeka",
+  "description": "Generate a GraphQL API and backoffice interface according to schemas",
+  "license": "MIT",
+  "keywords": [
+    "GraphQL",
+    "generate",
+    "API",
+    "schemas"
+  ],
+  "homepage": "https://app.flystart.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flystart-io/generator.git"
+  },
+  "bin": {
+    "flystart-generate": "dist/cli/main.js"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./relationships": "./dist/fields/relationships/index.js",
+    "./types": "./dist/fields/types/index.js",
+    "./defaults": "./dist/fields/defaults/index.js",
+    "./fields": "./dist/fields/fields.js"
+  },
+  "files": ["./dist/*"],
+  "dependencies": {
+    "@inquirer/prompts": "^4.3.0",
+    "change-case": "^4.1.2",
+    "dotenv": "^16.4.5",
+    "inquirer": "^9.2.15",
+    "lodash": "^4.17.21",
+    "node-stream-zip": "^1.15.0",
+    "pluralize": "^8.0.0",
+    "rimraf": "^5.0.5",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^18.19.15",
+    "@types/pluralize": "^0.0.29",
+    "@types/yargs": "^17.0.32",
+    "@typescript-eslint/parser": "^7.10.0",
+    "eslint": "^8.57.0",
+    "eslint-config-duodeka": "bitbucket:duodeka/eslint-config-duodeka",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "ts-node main.ts",
+    "build": "tsc"
+  },
+  "packageManager": "pnpm@9.1.1+sha512.14e915759c11f77eac07faba4d019c193ec8637229e62ec99eefb7cf3c3b75c64447882b7c485142451ee3a6b408059cdfb7b7fa0341b975f12d0f7629c71195"
+}
