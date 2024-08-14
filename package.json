@@ -1,6 +1,6 @@
 {
   "name": "@flystart/generator",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Duodeka",
   "description": "Generate a GraphQL API and backoffice interface according to schemas",
   "license": "MIT",
@@ -25,7 +25,9 @@
     "./defaults": "./dist/fields/defaults/index.js",
     "./fields": "./dist/fields/fields.js"
   },
-  "files": ["./dist/*"],
+  "files": [
+    "./dist/*"
+  ],
   "dependencies": {
     "@inquirer/prompts": "^4.3.0",
     "change-case": "^4.1.2",
