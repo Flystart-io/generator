@@ -132,6 +132,10 @@ export interface Field {
    */
   unique?: boolean;
   index?: boolean;
+
+  /**
+   * @deprecated use `name` instead.
+   */
   alias?: string;
   /**
    * Timestamp precision
